@@ -1,12 +1,12 @@
 import React from 'react'
 
-export default function About(props) {
+export default function About({ mode }) {
     let myStyle = {
-        color: props.mode === "dark" ? "white" : "#042743",
-        backgroundColor: props.mode === "dark" ?  "rgb(36 74 104)" : "white",
-     }
-     
-// Code for Enable Dark Mode Button 
+        color: mode === "dark" ? "white" : "#042743",
+        backgroundColor: mode === "dark" ? "rgb(36 74 104)" : "white",
+    }
+
+    // Code for Enable Dark Mode Button 
     // const [myStyle, setMyStyle] = useState({
     //     color: "black",
     //     backgroundColor: "white",
@@ -35,12 +35,12 @@ export default function About(props) {
 
 
     return (
-        <div className='container' style={{color: props.mode === "dark" ? "white" : "#042743"}}>
+        <div className='container' style={{ color: mode === "dark" ? "white" : "#042743" }}>
             <h2 className='my-3'>About us</h2>
             <div className="accordion" id="accordionExample">
                 <div className="accordion-item">
                     <h2 className="accordion-header">
-                        <button className="accordion-button my-0.75" type="button" style={myStyle}  data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button className="accordion-button my-0.75" type="button" style={myStyle} data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                             <strong> Analyze Your Text</strong>
                         </button>
                     </h2>

@@ -44,13 +44,13 @@ function App() {
         <Alert alert={alert} />
         <div className='container my-3'>
           <Routes>
-            <Route exact path="/about" element={<About  mode={mode} />} />
+            <Route exact path="/about" element={<About mode={mode} />} />
             <Route exact path="/" element={<TextForm heading="TextUtils - Word Counter, Character Counter, Remove Extra Spaces" mode={mode} showAlert={showAlert} />} />
           </Routes>
         </div>
       </Router>
-      
-{/* Code for Hosting via Github Pages
+
+      {/* Code for Hosting via Github Pages
       <Navbar title="TextUtils" aboutText="About" mode={mode} toggleMode={toggleMode} />
       <Alert alert={alert} />
       <div className='container my-3'>
